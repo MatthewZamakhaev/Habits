@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Habits</string>
+    <string-array name="priority_array">
+        <item>1 - Высокий</item>
+        <item>2 - Выше среднего</item>
+        <item>3 - Средний</item>
+        <item>4 - Ниже среднего</item>
+        <item>5 - Низкий</item>
+    </string-array>
+</resources>

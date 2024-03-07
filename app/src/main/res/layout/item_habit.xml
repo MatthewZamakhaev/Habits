@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="10dp"
+    android:background="@color/white"
+    android:paddingBottom="5dp">
+
+    <TextView
+        android:id="@+id/priority_habit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:text="1"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/name_habit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:text="Name"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/description_habit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="serif"
+        android:text="Description"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/name_habit"
+        app:layout_constraintTop_toBottomOf="@+id/name_habit" />
+
+    <TextView
+        android:id="@+id/frequency_habit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="serif"
+        android:text="Frequency"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/description_habit"
+        app:layout_constraintTop_toBottomOf="@+id/description_habit" />
+
+    <TextView
+        android:id="@+id/type_habit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:text="Type"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/frequency_habit"
+        app:layout_constraintTop_toBottomOf="@+id/frequency_habit" />
+
+    <ImageView
+        android:id="@+id/deleteItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/colorHabit"
+        app:srcCompat="@drawable/delete" />
+
+    <ImageView
+        android:id="@+id/updateItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/deleteItem"
+        app:layout_constraintStart_toStartOf="@+id/deleteItem"
+        app:layout_constraintTop_toBottomOf="@+id/deleteItem"
+        app:srcCompat="@drawable/create" />
+
+    <View
+        android:id="@+id/colorHabit"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@color/black"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@+id/name_habit"
+        app:layout_constraintEnd_toEndOf="@+id/deleteItem"
+        app:layout_constraintStart_toStartOf="@+id/updateItem"
+        app:layout_constraintTop_toBottomOf="@+id/name_habit" />
+
+    <TextView
+        android:id="@+id/textColor_habit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:text="rgb"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/type_habit"
+        app:layout_constraintStart_toStartOf="@+id/type_habit"
+        app:layout_constraintTop_toBottomOf="@+id/type_habit" />
+</androidx.constraintlayout.widget.ConstraintLayout>
