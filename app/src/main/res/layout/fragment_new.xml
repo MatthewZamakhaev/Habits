@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/back"
-    tools:context=".NewActivity">
+    tools:context=".fragments.NewFragment">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -27,7 +27,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:fontFamily="serif"
-                android:text="Привычка"
+                android:text="@string/habit_one"
                 android:textColor="@color/black"
                 android:textSize="24sp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -42,7 +42,7 @@
                 android:layout_marginTop="30dp"
                 android:layout_marginEnd="10dp"
                 android:ems="10"
-                android:hint="Введите название привычки"
+                android:hint="@string/habit_name"
                 android:inputType="textPersonName"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -57,7 +57,7 @@
                 android:layout_marginTop="30dp"
                 android:layout_marginEnd="10dp"
                 android:ems="10"
-                android:hint="Введите описание привычки"
+                android:hint="@string/habit_description"
                 android:inputType="textPersonName"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -90,27 +90,18 @@
                     android:id="@+id/good_radio"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="24dp"
+                    android:layout_marginStart="24dp"
                     android:layout_weight="1"
-                    android:text="Хорошая"
+                    android:text="@string/habit_good"
                     android:textSize="16sp" />
 
                 <RadioButton
                     android:id="@+id/bad_radio"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="24dp"
+                    android:layout_marginStart="24dp"
                     android:layout_weight="1"
-                    android:text="Плохая"
-                    android:textSize="16sp" />
-
-                <RadioButton
-                    android:id="@+id/neutral_radio"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="24dp"
-                    android:layout_weight="1"
-                    android:text="Нейтральная"
+                    android:text="@string/habit_bad"
                     android:textSize="16sp" />
             </RadioGroup>
 
@@ -122,7 +113,7 @@
                 android:layout_marginTop="30dp"
                 android:layout_marginEnd="10dp"
                 android:ems="10"
-                android:hint="Введите количество повторений"
+                android:hint="@string/habit_count"
                 android:inputType="number"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -136,7 +127,7 @@
                 android:layout_marginTop="30dp"
                 android:layout_marginEnd="10dp"
                 android:ems="10"
-                android:hint="Введите периодичность привычки"
+                android:hint="@string/habit_frequency"
                 android:inputType="number"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -148,7 +139,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="30dp"
-                android:text="Выберите приоритет привычки:"
+                android:text="@string/habit_priority"
                 android:textColor="@color/black"
                 android:textSize="18sp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -160,7 +151,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="30dp"
-                android:text="Выберите тип привычки:"
+                android:text="@string/habit_type"
                 android:textColor="@color/black"
                 android:textSize="18sp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -179,7 +170,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:padding="10dp"
-                    android:text="Выберите цвет:"
+                    android:text="@string/habit_color"
                     android:textColor="@color/black"
                     android:textSize="16sp" />
 
@@ -211,6 +202,5 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.95"
         app:rippleColor="@color/black" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

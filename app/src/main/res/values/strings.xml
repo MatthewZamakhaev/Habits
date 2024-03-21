@@ -7,4 +7,25 @@
         <item>4 - Ниже среднего</item>
         <item>5 - Низкий</item>
     </string-array>
+    <string name="habit_one">Привычка</string>
+    <string name="habit_name">Введите название привычки</string>
+    <string name="habit_description">Введите описание привычки</string>
+    <string name="habit_count">Введите количество повторений</string>
+    <string name="habit_frequency">Введите периодичность привычки</string>
+    <string name="habit_priority">Выберите приоритет привычки:</string>
+    <string name="nothing_change">Укажите недостающие данные</string>
+    <string name="habit_type">Выберите тип привычки:</string>
+    <string name="habit_color">Выберите цвет:</string>
+    <string name="habit_good">Хорошая</string>
+    <string name="habit_bad">Плохая</string>
+    <string name="habit_home">Домой</string>
+    <string name="habit_list">Список привычек</string>
+    <string name="habit_settings">Настройки</string>
+    <string name="home_hello">Добро пожаловать в приложение Habits!</string>
+    <string name="home_swipe">Свайпай вправо, чтобы открыть меню!</string>
+    <string name="setting_enable_notification1">Включить что-нибудь</string>
+    <string name="setting_enable_notification2">Включить что-нибудь еще</string>
+    <string name="good_habit_name">Хорошие</string>
+    <string name="bad_habit_name">Плохие</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
